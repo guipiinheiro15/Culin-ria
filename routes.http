@@ -1,0 +1,31 @@
+POST http://localhost:3333/receita
+Content-Type: application/json
+
+{
+    "nmReceita": "Ovos de páscoa",
+    "ingredientes": "Chocolate",
+    "tipo": "Doce"
+}
+
+###
+
+GET http://localhost:3333/receita
+
+###
+
+GET http://localhost:3333/receita?search=Bolinho
+
+###
+
+PUT http://localhost:3333/receita/cba49ebe-62b8-4ed3-8967-7f8a1416d255
+Content-Type: application/json
+
+{
+    "nmReceita": "Bolinho de chuva",
+    "ingredientes": "Massa",
+    "tipo": "Salgado"
+}
+
+###
+
+DELETE http://localhost:3333/receita/75ed3d97-bea6-45d8-9352-985e98b9f311
